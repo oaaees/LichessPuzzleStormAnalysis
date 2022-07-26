@@ -1,0 +1,8 @@
+.env
+*.csv
+*.txt
+*.ipynb
+*.png
+*.pgn
+/node_modules
+/ResultsCSV
