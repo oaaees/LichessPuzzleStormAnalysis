@@ -2,7 +2,7 @@
 *.csv
 *.txt
 *.ipynb
-*.png
+.png
 *.pgn
 /node_modules
 /ResultsCSV
