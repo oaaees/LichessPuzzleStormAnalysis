@@ -19,15 +19,15 @@ This project was done following these steps
 
 ![Blitz/Bullet Results](/imgs/ResultBulletBlitz.png)
 
-<p align="justify">Both Bullet and Blitz rating have a correlation of 0.845 with Puzzle Storm Score</p>
+<p align="center">Both Bullet and Blitz rating have a correlation of 0.845 with Puzzle Storm Score</p>
 
 Using quadratic regression we get the equations for the following parabolas of best fit:  
 
 For Bullet   
-<p align="justify">$y = 0.00001420323x^2 - 0.02129423x + 26.41750$</p>   
+<p align="center">$y = 0.00001420323x^2 - 0.02129423x + 26.41750$</p>   
 
 For Blitz     
-<p align="justify">$y = 0.00001865402x^2 - 0.0342326x + 32.27948$</p>   
+<p align="center">$y = 0.00001865402x^2 - 0.0342326x + 32.27948$</p>   
 
 where Y is your Puzzle Storm Score and X is your Bullet/Blitz Rating
  
