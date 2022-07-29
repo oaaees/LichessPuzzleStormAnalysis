@@ -30,7 +30,7 @@ function validateInfo(info){
 
 async function mainProcess() {
   const readStream = fs.createReadStream('Users.txt');
-  const writeStream = fs.createWriteStream('Results.txt', {flags:'a'});
+  const writeStream = fs.createWriteStream('Results.jsonl', {flags:'a'});
 
   const rl = readline.createInterface({
     input: readStream,

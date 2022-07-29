@@ -2,7 +2,7 @@ import fs from 'fs';
 import readline from 'readline';
 
 async function mainProcess() {
-  const readStream = fs.createReadStream('Results.txt');
+  const readStream = fs.createReadStream('Results.jsonl');
   const writeStreamBullet = fs.createWriteStream('ResultsCSV/ResultsBullet.csv', {flags:'a'});
   const writeStreamBlitz = fs.createWriteStream('ResultsCSV/ResultsBlitz.csv', {flags:'a'});
   const writeStreamRapid = fs.createWriteStream('ResultsCSV/ResultsRapid.csv', {flags:'a'});

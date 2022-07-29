@@ -2,7 +2,7 @@ import fs from 'fs';
 import readline from 'readline';
 
 async function mainProcess() {
-    const readStream = fs.createReadStream('LichessGames.txt');
+    const readStream = fs.createReadStream('LichessGames.pgn');
     const writeStream = fs.createWriteStream('Users.txt');
   
     const rl = readline.createInterface({
