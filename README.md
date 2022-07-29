@@ -32,12 +32,13 @@ For Blitz
 <p align="center"> $y = 0.00001865402x^2 - 0.0342326x + 32.27948$ </p>   
 
  ## Run this project
+![NodeJS and npm logo](/imgs/nodenpm.png)   
 To run this project you will need to install [NodeJS](https://nodejs.org/en/) and [npm](https://www.npmjs.com/), then:
 
 1. Clone this project 
-2. Run `npm install` in the project folder
+2. Open a terminal and run `npm install` from the project folder
 
 This project was divided into 3 files with different purposes:
 * **getUsers.js**: It will take a Lichess pgn file as an input and will output a file with a list of lichess users
-* **getData.js**: It will take a list of lichess users, then call the API, filter the ones we are looking for and finally outputs a .jsonl file with the users data
+* **getData.js**: It will take a list of Lichess users, call the API, filter the ones we are looking for, and finally will output a .jsonl file with the users data
 * **JSONtoCSV.js** It will take a .jsonl file and output one/various .csv files
