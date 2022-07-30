@@ -32,15 +32,16 @@ For Blitz
 <p align="center"> $y = 0.000018761x^2 - 0.0346802x + 36.9330$ </p>   
 
 ### Rapid and Puzzle
-![Rapid/Puzzle Results](imgs/ResultRapidPuzzle.png)
+![Rapid/Puzzle Results](imgs/ResultRapidPuzzle.png)   
+*These results were less conclusive*
 ___________________________________________________
-
-<p align="center">*These results were less conclusive*</p>
 
 ### Correlation 
 Rapid has a correlation coefficient of 0.835 when compared with Puzzle Storm Score, while Blitz coefficient is 0.684
 
 ### Curves of Best fit
+Note that these graphs are more scattered than the previous ones.
+
 For Rapid
 <p align="center"> $y = 0.00002173x^2 -0.0465462x + 44.7887$ </p>   
 
