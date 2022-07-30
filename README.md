@@ -39,7 +39,7 @@ ___________________________________________________
 ___________________________________________________
 
 ### Correlation 
-Rapid has a correlation coefficient of 0.835 when compared with Puzzle Storm Score, while Blitz coefficient is 0.684
+Rapid has a correlation coefficient of 0.835 when compared with Puzzle Storm Score, while Puzzle Rating coefficient is 0.684
 
 ### Curves of Best fit
 For Rapid
