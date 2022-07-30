@@ -9,27 +9,43 @@ This study was possible thanks to [Lichess Database](https://database.lichess.or
 
 This project was done following these steps
 
-1. A very small portion of the Database was downloaded
+1. A small portion of the Database was downloaded
 2. For every game, the username of both players was extracted (remove duplicates!)
 3. For every user, the API was called to get the current rating and puzzle storm score
-4. Only users who had more than 5 tries in puzzle storm and also had an established rating in either Bullet/Blitz were considered
+4. Only users who had more than 50 tries in puzzle storm and also had an well established rating in either Bullet/Blitz were considered
 5. The plots were made using [matplotlib](https://matplotlib.org/) and Data Analysis with [numpy](https://numpy.org/) and [pandas](https://pandas.pydata.org/)
 
 ## Results
-
+### Bullet and Blitz
 ![Blitz/Bullet Results](/imgs/ResultBulletBlitz.png)
-
+____________________________________________________
 ### Correlation
-Both Bullet and Blitz rating have a correlation of 0.845 when compared with Puzzle Storm Score
+Bullet has a correlation coefficient of 0.860 when compared with Puzzle Storm Score, while Blitz coefficient is 0.866 
 
 ### Curves of Best Fit
 Using quadratic regression we get the equations for the following parabolas where Y is your Puzzle Storm Score and X is your Bullet/Blitz Rating:  
 
 For Bullet   
-<p align="center"> $y = 0.00001420323x^2 - 0.02129423x + 26.41750$ </p>   
+<p align="center"> $y = 0.00001435x^2 - 0.022443018x + 32.13729$ </p>   
 
 For Blitz     
-<p align="center"> $y = 0.00001865402x^2 - 0.0342326x + 32.27948$ </p>   
+<p align="center"> $y = 0.000018761x^2 - 0.0346802x + 36.9330$ </p>   
+
+### Rapid and Puzzle
+![Rapid/Puzzle Results](imgs/ResultRapidPuzzle.png)
+___________________________________________________
+
+<p align="center">*These results were less conclusive*</p>
+
+### Correlation 
+Rapid has a correlation coefficient of 0.835 when compared with Puzzle Storm Score, while Blitz coefficient is 0.684
+
+### Curves of Best fit
+For Rapid
+<p align="center"> $y = 0.00002173x^2 -0.0465462x + 44.7887$ </p>   
+
+For Puzzle Rating
+<p align="center"> $y = 0.00001084x^2 - 0.00921613x + 12.01960$ </p>   
 
  ## Run this project
 ![NodeJS and npm logo](/imgs/nodenpm.png)   

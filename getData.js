@@ -21,11 +21,7 @@ const fetchInfo = async (user) => {
 }
 
 function validateInfo(info){
-    if(!info.perfs || !info.perfs.storm){
-      return false;
-    }
-
-    return (info.perfs.storm.runs > 5)
+  return (info.perfs && info.perfs.storm && info.perfs.storm.runs >= 50)
 }
 
 async function mainProcess() {
