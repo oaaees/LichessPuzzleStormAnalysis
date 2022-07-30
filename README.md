@@ -12,7 +12,7 @@ This project was done following these steps
 1. A small portion of the Database was downloaded
 2. For every game, the username of both players was extracted (remove duplicates!)
 3. For every user, the API was called to get the current rating and puzzle storm score
-4. Only users who had more than 50 tries in puzzle storm and also had an well established rating in either Bullet/Blitz were considered
+4. Only users who had more than 50 tries in puzzle storm and also had an well established rating in either of the categories were considered
 5. The plots were made using [matplotlib](https://matplotlib.org/) and Data Analysis with [numpy](https://numpy.org/) and [pandas](https://pandas.pydata.org/)
 
 ## Results
