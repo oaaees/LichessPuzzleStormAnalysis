@@ -3,7 +3,6 @@
 *.txt
 *.ipynb
 *.jsonl
-*.png
 *.pgn
 /node_modules
 /ResultsCSV
