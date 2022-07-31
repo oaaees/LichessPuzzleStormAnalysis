@@ -3,6 +3,8 @@ _______________________________
 
 This is a Data Analysis project I've wanted to do since [Lichess](https://lichess.org) launched the [Puzzle Storm Feature](https://lichess.org/storm). If you are a Lichess player and want to know how good/bad your score is this is your place!
 
+You can now visit [Lichess Puzzle Storm Score Calculator](https://oaaees.github.io/LichessPuzzleStormAnalysis/) to check your expected highest score.
+
 ## Methodology
 
 This study was possible thanks to [Lichess Database](https://database.lichess.org/#standard_games) and [Lichess API](https://lichess.org/api)
@@ -16,6 +18,7 @@ This project was done following these steps
 5. The plots were made using [matplotlib](https://matplotlib.org/) and Data Analysis with [numpy](https://numpy.org/) and [pandas](https://pandas.pydata.org/)
 
 ## Results
+Remember that Lichess only records the highest score you've achieved!
 ____________________________________________________
 ### Bullet and Blitz
 ![Blitz/Bullet Results](/imgs/ResultBulletBlitz.png)
