@@ -1,8 +1,17 @@
+body {
+    background-color: #153131;
+    color: #CFD7C7;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
+}
+
+#input::placeholder{
+    color: #CFD7C7;
 }
 
 .output-container{
