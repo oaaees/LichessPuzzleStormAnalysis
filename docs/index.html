@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Puzzle Storm Calculator</title>
+  <meta name="description" content="Lichess Puzzle Storm Calculator">
+  <meta name="author" content="oaaees">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">  
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <header><h2 class="title">Lichess Puzzle Storm Score Calculator</h2></header>
+    <form id="form">
+      <div class="row">
+        <input class="five columns" type="number" id="input" placeholder="Your Lichess rating">
+        <select class="three columns" id="rating">
+          <option value="Bullet">Bullet</option>
+          <option value="Blitz">Blitz</option>
+          <option value="Rapid">Rapid</option>
+        </select>
+        <input type="submit" id="submit" class="four columns button-primary" value="Calculate">
+      </div>
+    </form>
+    <div class="row output-container">
+      <p>Your expected Puzzle Storm Score is:</p>
+      <h2 id="output"></h2>
+    </div>
+    <footer><p>More info on how it's calculated in <a href="https://github.com/oaaees/LichessPuzzleStormAnalysis" target="_blank">GitHub</a>. Made with <span style="color: #e25555;">&#9829;</span> by <a href="https://github.com/oaaees" target="_blank">oaaees</a></p></footer>
+  </div>
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+<script>
+  let form = document.getElementById("form");
+  let input = document.getElementById("input");
+  let output = document.getElementById("output");
+  let rating = document.getElementById("rating");
+
+  form.onsubmit = (event) => {
+    event.preventDefault();
+    let x = input.value;
+    if(!x){
+      output.innerHTML = "";
+      return;
+    }
+    let result;
+    
+    switch(rating.value){
+      case "Bullet":
+        result = 0.00001435*(x**2) - 0.0224430*x + 32.1372;
+        break;
+      case "Blitz":
+        result = 0.00001876*(x**2) - 0.0346802*x + 36.9330;
+        break;
+      case "Rapid":
+        result = 0.00002173*(x**2) - 0.0465462*x + 44.7887;
+        break;
+    }
+
+    if(x < 1000){
+      output.innerHTML = "Less than 20";
+    } else if(x > 3000) {
+      output.innerHTML = "More than 100"
+    } else {
+      output.innerHTML = result.toFixed(2);
+    }
+  };
+
+</script>
+</html>

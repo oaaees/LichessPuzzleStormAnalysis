@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.output-container{
+    min-height: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#output {
+    font-weight: 400;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.6em;
+}
+
+@media (min-width: 550px) {
+    footer{
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 750px) {
+    footer{
+        font-size: 1em;
+    } 
+}
